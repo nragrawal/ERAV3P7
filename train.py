@@ -4,9 +4,9 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 from torchvision import datasets, transforms
-from model import Net
 from tqdm import tqdm
 from torchsummary import summary
+from model import *
 
 # Train Phase transformations
 train_transforms = transforms.Compose([
@@ -53,7 +53,7 @@ test_loader = torch.utils.data.DataLoader(test, **dataloader_args)
 use_cuda = torch.cuda.is_available()
 device = torch.device("cuda" if use_cuda else "cpu")
 print(device)
-model = Model1(dropout_value=0).to(device)
+model = Model7().to(device)
 summary(model, input_size=(1, 28, 28))
 
 train_losses = []
@@ -126,7 +126,7 @@ test_losses = []
 train_acc = []
 test_acc = []
 
-model =  Net().to(device)
+model =  Model7().to(device)
 optimizer = optim.SGD(model.parameters(), lr=0.01, momentum=0.9)
 scheduler = StepLR(optimizer, step_size=10, gamma=0.1)
 #scheduler = ReduceLROnPlateau(optimizer, mode='max', factor=0.5, patience=2, verbose=True)
