@@ -28,6 +28,3 @@ build/
 # PyTorch model checkpoints
 *.pth
 *.pt
-
-# Logs
-*.log 

@@ -1,0 +1,140 @@
+model2.log
+
+CUDA Available? True
+/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py:617: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(
+Requirement already satisfied: torchsummary in /usr/local/lib/python3.10/dist-packages (1.5.1)
+cuda
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1            [-1, 8, 26, 26]              72
+              ReLU-2            [-1, 8, 26, 26]               0
+            Conv2d-3           [-1, 16, 24, 24]           1,152
+              ReLU-4           [-1, 16, 24, 24]               0
+            Conv2d-5           [-1, 10, 24, 24]             160
+         MaxPool2d-6           [-1, 10, 12, 12]               0
+            Conv2d-7           [-1, 10, 10, 10]             900
+              ReLU-8           [-1, 10, 10, 10]               0
+            Conv2d-9             [-1, 16, 8, 8]           1,440
+             ReLU-10             [-1, 16, 8, 8]               0
+           Conv2d-11             [-1, 16, 6, 6]           2,304
+             ReLU-12             [-1, 16, 6, 6]               0
+           Conv2d-13             [-1, 10, 6, 6]           1,440
+             ReLU-14             [-1, 10, 6, 6]               0
+           Conv2d-15             [-1, 10, 1, 1]           3,600
+================================================================
+Total params: 11,068
+Trainable params: 11,068
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.00
+Forward/backward pass size (MB): 0.32
+Params size (MB): 0.04
+Estimated Total Size (MB): 0.37
+----------------------------------------------------------------
+EPOCH: 0
+Loss=0.19917063415050507 Batch_id=468 Accuracy=62.55: 100%|██████████| 469/469 [00:17<00:00, 26.93it/s]
+Test set: Average loss: 0.2267, Accuracy: 9350/10000 (93.50%)
+
+EPOCH: 1
+Loss=0.21462593972682953 Batch_id=468 Accuracy=94.69: 100%|██████████| 469/469 [00:20<00:00, 23.33it/s]
+Test set: Average loss: 0.1334, Accuracy: 9590/10000 (95.90%)
+
+EPOCH: 2
+Loss=0.05692889913916588 Batch_id=468 Accuracy=96.41: 100%|██████████| 469/469 [00:17<00:00, 26.68it/s]
+Test set: Average loss: 0.0992, Accuracy: 9708/10000 (97.08%)
+
+EPOCH: 3
+Loss=0.12066958099603653 Batch_id=468 Accuracy=97.17: 100%|██████████| 469/469 [00:18<00:00, 25.47it/s]
+Test set: Average loss: 0.0815, Accuracy: 9738/10000 (97.38%)
+
+EPOCH: 4
+Loss=0.03455319628119469 Batch_id=468 Accuracy=97.56: 100%|██████████| 469/469 [00:16<00:00, 28.15it/s]
+Test set: Average loss: 0.0860, Accuracy: 9725/10000 (97.25%)
+
+EPOCH: 5
+Loss=0.06263264268636703 Batch_id=468 Accuracy=97.89: 100%|██████████| 469/469 [00:16<00:00, 27.73it/s]
+Test set: Average loss: 0.0627, Accuracy: 9786/10000 (97.86%)
+
+EPOCH: 6
+Loss=0.06719492375850677 Batch_id=468 Accuracy=98.13: 100%|██████████| 469/469 [00:16<00:00, 28.37it/s]
+Test set: Average loss: 0.0571, Accuracy: 9818/10000 (98.18%)
+
+EPOCH: 7
+Loss=0.046780820935964584 Batch_id=468 Accuracy=98.31: 100%|██████████| 469/469 [00:17<00:00, 27.23it/s]
+Test set: Average loss: 0.0511, Accuracy: 9826/10000 (98.26%)
+
+EPOCH: 8
+Loss=0.004970018286257982 Batch_id=468 Accuracy=98.51: 100%|██████████| 469/469 [00:18<00:00, 25.23it/s]
+Test set: Average loss: 0.0505, Accuracy: 9838/10000 (98.38%)
+
+EPOCH: 9
+Loss=0.11533138900995255 Batch_id=468 Accuracy=98.56: 100%|██████████| 469/469 [00:17<00:00, 26.68it/s]
+Test set: Average loss: 0.0552, Accuracy: 9826/10000 (98.26%)
+
+EPOCH: 10
+Loss=0.10143133252859116 Batch_id=468 Accuracy=98.63: 100%|██████████| 469/469 [00:18<00:00, 25.95it/s]
+Test set: Average loss: 0.0494, Accuracy: 9850/10000 (98.50%)
+
+EPOCH: 11
+Loss=0.024266505613923073 Batch_id=468 Accuracy=98.77: 100%|██████████| 469/469 [00:17<00:00, 27.36it/s]
+Test set: Average loss: 0.0453, Accuracy: 9863/10000 (98.63%)
+
+EPOCH: 12
+Loss=0.009855186566710472 Batch_id=468 Accuracy=98.90: 100%|██████████| 469/469 [00:17<00:00, 27.15it/s]
+Test set: Average loss: 0.0469, Accuracy: 9843/10000 (98.43%)
+
+EPOCH: 13
+Loss=0.0981641337275505 Batch_id=468 Accuracy=98.89: 100%|██████████| 469/469 [00:18<00:00, 26.01it/s]
+Test set: Average loss: 0.0422, Accuracy: 9869/10000 (98.69%)
+
+EPOCH: 14
+Loss=0.012892781756818295 Batch_id=468 Accuracy=99.01: 100%|██████████| 469/469 [00:17<00:00, 26.73it/s]
+Test set: Average loss: 0.0404, Accuracy: 9873/10000 (98.73%)
+
+EPOCH: 15
+Loss=0.004683618899434805 Batch_id=468 Accuracy=99.11: 100%|██████████| 469/469 [00:18<00:00, 25.32it/s]
+Test set: Average loss: 0.0400, Accuracy: 9869/10000 (98.69%)
+
+EPOCH: 16
+Loss=0.017282741144299507 Batch_id=468 Accuracy=99.08: 100%|██████████| 469/469 [00:17<00:00, 26.08it/s]
+Test set: Average loss: 0.0473, Accuracy: 9844/10000 (98.44%)
+
+EPOCH: 17
+Loss=0.02171301282942295 Batch_id=468 Accuracy=99.14: 100%|██████████| 469/469 [00:17<00:00, 26.26it/s]
+Test set: Average loss: 0.0433, Accuracy: 9861/10000 (98.61%)
+
+EPOCH: 18
+Loss=0.026601620018482208 Batch_id=468 Accuracy=99.12: 100%|██████████| 469/469 [00:17<00:00, 27.13it/s]
+Test set: Average loss: 0.0418, Accuracy: 9876/10000 (98.76%)
+
+EPOCH: 19
+Loss=0.006705818697810173 Batch_id=468 Accuracy=99.28: 100%|██████████| 469/469 [00:17<00:00, 26.99it/s]
+Test set: Average loss: 0.0490, Accuracy: 9850/10000 (98.50%)
+
+
+==================================================
+| Epoch | Training Accuracy | Test Accuracy | Diff |
+==================================================
+|   0   |      62.55       |     93.50     | 30.95 |
+|   1   |      94.69       |     95.90     | 1.21 |
+|   2   |      96.41       |     97.08     | 0.67 |
+|   3   |      97.17       |     97.38     | 0.21 |
+|   4   |      97.56       |     97.25     | -0.31 |
+|   5   |      97.89       |     97.86     | -0.03 |
+|   6   |      98.13       |     98.18     | 0.05 |
+|   7   |      98.31       |     98.26     | -0.05 |
+|   8   |      98.51       |     98.38     | -0.13 |
+|   9   |      98.56       |     98.26     | -0.30 |
+|  10   |      98.63       |     98.50     | -0.13 |
+|  11   |      98.77       |     98.63     | -0.14 |
+|  12   |      98.90       |     98.43     | -0.47 |
+|  13   |      98.89       |     98.69     | -0.20 |
+|  14   |      99.01       |     98.73     | -0.28 |
+|  15   |      99.11       |     98.69     | -0.42 |
+|  16   |      99.08       |     98.44     | -0.64 |
+|  17   |      99.14       |     98.61     | -0.53 |
+|  18   |      99.12       |     98.76     | -0.36 |
+|  19   |      99.28       |     98.50     | -0.78 |
+==================================================

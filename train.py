@@ -53,7 +53,7 @@ test_loader = torch.utils.data.DataLoader(test, **dataloader_args)
 use_cuda = torch.cuda.is_available()
 device = torch.device("cuda" if use_cuda else "cpu")
 print(device)
-model = Net(dropout_value=0).to(device)
+model = Model1(dropout_value=0).to(device)
 summary(model, input_size=(1, 28, 28))
 
 train_losses = []
